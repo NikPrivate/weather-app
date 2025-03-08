@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div
-      className="h-screen w-full bg-cover bg-center relative flex flex-col justify-center items-center"
+      className="h-screen bg-cover bg-center relative flex flex-col justify-center items-center"
       style={{
         backgroundImage:
           "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/background_image.jpg')",
@@ -54,7 +54,7 @@ function App() {
               }
             }}
             placeholder="Search"
-            className="mb-4 py-2 px-4 bg-transparent border-2 rounded-lg bg-white focus:outline-none w-[400px]"
+            className="mb-4 py-2 px-4 bg-transparent border-2 rounded-lg bg-white focus:outline-none w-[350px] md:w-[400px] lg:w-[500px] xl:w-[400px]"
           />
           <button className="cursor-pointer">
             <IoSearch

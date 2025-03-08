@@ -13,7 +13,7 @@ function App() {
   const fetchWeather = async () => {
     try {
       const weatherResponse = await axios.get(
-        `http://localhost:8080/weather?city=${city}`
+        `https://weather-app-production-dd93.up.railway.app/weather?city=${city}`
       );
 
       setWeather(weatherResponse.data);
@@ -24,7 +24,7 @@ function App() {
       const lon = weatherResponse.data.coord.lon;
 
       const timeResponse = await axios.get(
-        `http://localhost:8080/timezone?lat=${lat}&lon=${lon}`
+        `https://weather-app-production-dd93.up.railway.app/timezone?lat=${lat}&lon=${lon}`
       );
       setTime(timeResponse.data);
     } catch (err) {
